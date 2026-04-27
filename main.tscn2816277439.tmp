@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://crh28hj45gjwv"]
+
+[ext_resource type="Script" uid="uid://dwhnyy2oq7bb2" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://bys46k72hnifx" path="res://player.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://w447x5naalyx" path="res://word.tscn" id="2_0xm2m"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1bvp3"]
+
+[node name="main" type="Node2D" unique_id=703140016]
+script = ExtResource("1_0xm2m")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=712242781]
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=584363416]
+script = ExtResource("1_ig7tw")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=388917761]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=915716283]
+shape = SubResource("RectangleShape2D_1bvp3")
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1656990520]
+
+[node name="Word" parent="." unique_id=470935623 instance=ExtResource("2_0xm2m")]
+
+[node name="WordapiRequester" type="HTTPRequest" parent="." unique_id=1072391416]
+
+[node name="CatRequester" type="HTTPRequest" parent="." unique_id=1899756275]
