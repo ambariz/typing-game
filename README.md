@@ -28,4 +28,12 @@ The higher you climb, the faster and more intense the game becomes.
 - Live random words
 - Typing based jump system  
 - Arcade style vertical climbing  
-- Simple and responsive controls  
+- Simple and responsive controls
+
+---
+
+## Screenshots
+
+![Screenshot 1](/screenshots/s1.png)  
+![Screenshot 2](/screenshots/s2.png)  
+![Screenshot 3](/screenshots/s3.png)  
